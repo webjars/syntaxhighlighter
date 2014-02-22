@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>syntaxhighlighter</artifactId>
-    <version>3.0.83-SNAPSHOT</version>
+    <version>3.0.83</version>
     <name>SyntaxHighlighter</name>
     <description>WebJar for SyntaxHighlighter</description>
     <url>http://webjars.org</url>
@@ -41,7 +41,7 @@
         <url>http://github.com/webjars/syntaxhighlighter</url>
         <connection>scm:git:https://github.com/webjars/syntaxhighlighter.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/syntaxhighlighter.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>syntaxhighlighter-3.0.83</tag>
     </scm>
     
     <properties>
@@ -85,7 +85,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/syntaxhighlighter-${upstream.version}" includes="styles/ scripts/"/>
+                                    <fileset dir="${project.build.directory}/syntaxhighlighter-${upstream.version}" includes="styles/ scripts/" />
                                 </move>
                             </target>
                         </configuration>
